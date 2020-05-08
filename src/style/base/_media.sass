@@ -1,0 +1,88 @@
+@media (max-width: 1200px) 
+  .container
+    padding: 0 70px
+  .present
+    &__text
+      font-size: 16px
+  .product
+    &__text, &__advantages
+      font-size: 16px
+  .questions
+    &__item
+      font-size: 16px
+  .form
+    &__modal
+      width: 60%
+    &__order-name
+      font-size: 18px
+
+@media (max-width: 991px)
+  .container
+    padding: 0 40px 
+  .product, .present, .questions
+    flex-wrap: wrap
+    &__img, &__descr
+      width: 80%
+    &__img
+      margin-bottom: 30px
+  .product, .present
+    margin-bottom: 50px
+  .form
+    &__modal
+      width: 65%
+
+@media (max-width: 767px)
+  .container
+    padding: 0 20px
+  .header
+    &__title
+      font-size: 50px
+    &__descr
+      font-size: 16px
+  .product, .present, .questions
+    &__img, &__descr
+      width: 90%
+  .form
+    &__close
+      width: 25px
+      height: 25px
+      &:after, &:before
+        left: 10px
+        height: 25px  
+    &__order-name
+      width: 70%
+    &__modal
+      width: 80%
+
+@media (max-width: 575px)
+  .container
+    padding: 0 15px
+  .header
+    &__title
+      font-size: 35px
+      padding: 0
+  .about
+    &__text
+      font-size: 18px
+  .product, .present, .questions
+    &__img, &__descr
+      width: 100%
+  .present
+    &__text
+      font-size: 14px
+  .product
+    &__text, &__advantages
+      font-size: 14px
+  .questions
+    &__item
+      font-size: 14px
+  .form
+    &__alert
+      width: 70%
+    &__modal
+      width: 100%
+      height: 90vh
+      padding: 15px 15px
+    &__close
+      top: 1px
+      right: 1px

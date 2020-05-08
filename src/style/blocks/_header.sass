@@ -1,0 +1,49 @@
+.header
+  height: 100vh
+  position: relative
+  background-attachment: fixed
+  background-image: url("../images/header-background.jpg")
+  background-color: rgba(0,0,0,0.7)
+  color: white
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+  @include bg
+  &__title
+    font-size: 48px
+    margin-bottom: 0
+    font-weight: 700
+    line-height: 1.30
+    span
+      color: #FFA882
+  &__divider
+    height: 1px
+    background-color: white
+    width: 15%
+    margin: 50px auto
+  &__descr
+    font-size: 20px
+    width: 95%
+    text-align: center
+    margin: 0 auto
+  &__arrow 
+    position: absolute
+    cursor: pointer
+    bottom: 25px
+    width: 40px
+    height: 30px
+    & .path
+      stroke: white
+      fill: transparent
+      stroke-width: 2px	
+      animation: arrow 2s infinite
+      -webkit-animation: arrow 2s infinite
+
+@keyframes arrow
+  0% 
+    transform: translateY(0)
+  50% 
+    transform: translateY(30%)
+  100% 
+    transform: translateY(0)

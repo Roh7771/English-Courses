@@ -1,0 +1,124 @@
+.form
+  width: 100%
+  height: 100vh
+  background-color: rgba(0, 0, 0, 0.78)
+  position: fixed
+  top: 0
+  display: none
+  z-index: 3
+  &__alert
+    position: absolute
+    width: 40%
+    top: 40px
+    left: 50%
+    transform: translateX(-50%)
+    text-align: center
+    padding: 10px 20px
+    border-radius: .25rem
+    z-index: 1
+    display: none
+    &_green
+      color: #155724
+      background-color: #d4edda
+    &_red
+      color: #721c24
+      background-color: #f8d7da
+  &__modal
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 50%
+    height: 80%
+    background-color: white
+    padding: 40px 30px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translateX(-50%) translateY(-50%)
+  &__order
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 0px
+    border-top: 1px solid grey
+    border-bottom: 1px solid grey
+    margin-bottom: 20px
+  &__order-name
+    width: 80%
+    font-weight: bold
+    font-size: 20px
+  &__order-price
+    font-weight: 300
+    font-size: 18px
+  &__order-close 
+    width: 25px
+    height: 25px
+    opacity: 0.3
+    border: 2px solid black
+    border-radius: 50%
+    position: relative
+    cursor: pointer
+  &__order-close:hover 
+    opacity: 1
+  &__order-close:before, &__order-close:after
+    content: ''
+    position: absolute
+    left: 9.5px
+    top: 2px
+    height: 17px
+    width: 2px
+    background-color: #333
+  &__order-close:before 
+    transform: rotate(45deg)
+  &__order-close:after 
+    transform: rotate(-45deg)
+  &__total-price
+    text-align: end
+    font-size: 20px
+    font-weight: 700
+    margin-bottom: 20px
+  &__fields
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    height: 60%
+  &__email, &__name
+    width: 100%
+    height: 56px
+    padding: 0 20px
+    font-size: 18px
+    border: 1px solid black
+  &__label
+    margin-bottom: 10px
+    font-weight: 300
+    font-size: 18px
+  &__field
+    margin-bottom: 30px
+  &__button
+    height: 60px
+    background-color: black
+    color: white
+    font-size: 18px
+    width: 100%
+    border: none
+    display: flex
+    align-items: center
+    justify-content: center
+  &__close
+    width: 35px
+    cursor: pointer
+    height: 35px
+    position: absolute
+    right: 20px
+    top: 20px
+    &:before, &:after
+      content: ''
+      width: 3px
+      height: 35px
+      position: absolute
+      left: 14px
+      background-color: white
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(-45deg)
