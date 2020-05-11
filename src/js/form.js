@@ -93,7 +93,7 @@ formEl.addEventListener("submit", async (e) => {
 
       yandexFormEl.innerHTML = fillForm(
         "Курс английского по сериалу Downton Abbey",
-        2,
+        550,
         label
       );
       document.body.appendChild(yandexFormEl);
