@@ -73,6 +73,7 @@ formEl.addEventListener("submit", async (e) => {
       email: emailInputEl.value,
       name: nameInputEl.value,
       label,
+      course: 'Downton Abbey'
     };
 
     const response = await fetch(
